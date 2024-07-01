@@ -1,2 +1,16 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px; /* Ensures the first and last items touch the edges of the screen */
+}
 
-/* Your CSS Code here. */
+.holder > .item {
+    flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row with space between them */
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    border: 1px solid #ccc;
+}
